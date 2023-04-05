@@ -1,0 +1,10 @@
+[Unit]
+Description=display funi numbers
+
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/comp/run_clock
+Restart=on-failure
+
