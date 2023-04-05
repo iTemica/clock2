@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo /home/comp/clock2/bin/clock \
+  --led-rows=32 \
+  --led-cols=64 \
+  --led-chain=2 \
+  -d "%H:%M:%S" \
+  -f '/home/comp/clock2/assets/fonts/Kset1.bdf' \
+  -C 243,133,35

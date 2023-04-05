@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo systemctl stop cock 
+
+sudo /home/comp/rpi-rgb-led-matrix/examples-api-use/text-example \
+  --led-rows=32 \
+  --led-cols=64 \
+  --led-chain=2 \
+  --led-brightness=50 \
+  -f '/home/comp/rpi-rgb-led-matrix/fonts/Kset1.bdf' \
+  -C 255,0,0 \
+
+sudo systemctl restart cock 
+

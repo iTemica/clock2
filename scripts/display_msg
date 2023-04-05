@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo -E systemctl stop cock
+
+sudo ~/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example \
+  --led-rows=32 \
+  --led-cols=64 \
+  --led-chain=2 \
+  -s 3 \
+  -f '/home/comp/rpi-rgb-led-matrix/fonts/Kset1.bdf' \
+  -C 243,133,35 \
+  $1
+
+sudo -E systemctl restart cock
