@@ -1,15 +1,13 @@
 from flask import Flask, render_template,request,redirect,json
-from time import sleep
 from datetime import datetime
 import os
 from shlex import quote
 import pika
 
-app = Flask(__name__)
-template_dir = os.path.abspath('/home/comp/clock2/assets/templates/')
+app = Flask(__name__, template_folder='/home/comp/clock2/assets/templates/')
 @app.route('/')
 def main():
-	return render_template('index.html', template_folder=template_dir)
+	return render_template('index.html')
 
 @app.route('/text',methods=['POST'])
 def text():
@@ -23,4 +21,4 @@ def text():
 	return redirect('/')
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0", port="9001")
+	app.run(host="0.0.0.0", port=9001)
