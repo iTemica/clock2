@@ -7,8 +7,8 @@ sudo /home/comp/rpi-rgb-led-matrix/examples-api-use/text-example \
   --led-cols=64 \
   --led-chain=2 \
   --led-brightness=50 \
-  -f '/home/comp/rpi-rgb-led-matrix/fonts/Kset1.bdf' \
-  -C 255,0,0 \
+  -f '/home/comp/clock2/assets/fonts/Kset1.bdf' \
+  -C 243,133,35 \
 
 sudo systemctl restart cock 
 

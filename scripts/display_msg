@@ -7,7 +7,7 @@ sudo ~/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example \
   --led-cols=64 \
   --led-chain=2 \
   -s 3 \
-  -f '/home/comp/rpi-rgb-led-matrix/fonts/Kset1.bdf' \
+  -f '/home/comp/clock2/assets/fonts/Kset1.bdf' \
   -C 243,133,35 \
   $1
 
