@@ -6,7 +6,7 @@ import pika
 
 app = Flask(__name__,
             template_folder='/home/comp/clock2/assets/templates/',
-            static_folder='')
+            static_folder='/home/comp/clock2/assests/static/')
 @app.route('/')
 def main():
 	return render_template('index.html')
