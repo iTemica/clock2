@@ -4,7 +4,9 @@ import os
 from shlex import quote
 import pika
 
-app = Flask(__name__, template_folder='/home/comp/clock2/assets/templates/')
+app = Flask(__name__,
+            template_folder='/home/comp/clock2/assets/templates/',
+            static_folder='')
 @app.route('/')
 def main():
 	return render_template('index.html')
