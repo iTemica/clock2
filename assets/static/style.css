@@ -1,18 +1,19 @@
 body {
     background-color: black;
     color: rgb(243,133,35);
+    font-family: 'Tilt Neon', sans-serif;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
     font-size: 24px;
-  }
-  
-  .container {
     color: orange;
-  }
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

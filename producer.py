@@ -1,12 +1,12 @@
 from flask import Flask, render_template,request,redirect,json
 from datetime import datetime
 import os
-from shlex import quote
 import pika
 
 app = Flask(__name__,
             template_folder='/home/comp/clock2/assets/templates/',
-            static_folder='/home/comp/clock2/assests/static/')
+            static_folder='/home/comp/clock2/assets/static/')
+
 @app.route('/')
 def main():
 	return render_template('index.html')
@@ -18,8 +18,7 @@ def text():
 		data["mgs"].encode('ascii')
 	except Exception:
 		return redirect('/')
-	text_to_display = '{}'.format(quote(data))
-	os.system ("sudo -E ./display_msg \"" + text_to_display + '"')
+	os.system ("sudo -E /home/comp/clock2/scripts/display_msg \"" + data["mgs"] + '"')
 	return redirect('/')
 
 if __name__ == '__main__':

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-sudo sytemctl stop cock
+sudo systemctl stop cock
 
-sudo /home/comp/rpi-rgb-led-matrix/examples-api-use/demo \
+sudo /home/comp/clock2/bin/demo \
 	-D 1 \
 	--led-rows=32 \
 	--led-brightness=50 \
 	--led-cols=64 \
 	--led-chain=2 \
-	"/home/comp/clock2/assets/$1.ppm"
+	"/home/comp/clock2/assets/animations/$1.ppm"
 
-sudo syestemctl restart cock
+sudo systemctl restart cock

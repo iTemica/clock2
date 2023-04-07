@@ -2,7 +2,7 @@
 
 sudo systemctl stop cock 
 
-sudo /home/comp/rpi-rgb-led-matrix/examples-api-use/text-example \
+sudo /home/comp/clock2/bin/text-example \
   --led-rows=32 \
   --led-cols=64 \
   --led-chain=2 \
